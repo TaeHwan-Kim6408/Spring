@@ -1,0 +1,23 @@
+package www.silver.service;
+
+import org.springframework.stereotype.Service;
+
+import www.silver.vo.BoardVO;
+
+@Service
+public class BoardServiceImpl implements IF_BoardService {
+		
+	@Override
+	public void addBoard(BoardVO boardvo) {
+		// TODO Auto-generated method stub
+		if(boardvo.getViewmember().equals("1")) {
+			boardvo.setViewmember("공개");
+		} else {
+			boardvo.setViewmember("비공개");
+		}
+		//Dao > mapper > DB insert
+	}
+		
+	
+
+}

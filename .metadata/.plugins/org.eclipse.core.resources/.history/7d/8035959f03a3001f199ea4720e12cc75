@@ -1,0 +1,7 @@
+package www.silver.hom;
+
+
+@Controller
+public class LoginController {
+
+}

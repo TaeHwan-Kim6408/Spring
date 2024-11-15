@@ -1,0 +1,10 @@
+package www.silver.dao;
+
+import vo.MemberVO;
+
+public class IF_MemberDao {
+	
+	//디비 작업을 메서드로 정의 합니다.
+	public void insertOne(MemberVO membervo)throws Exception;
+
+}

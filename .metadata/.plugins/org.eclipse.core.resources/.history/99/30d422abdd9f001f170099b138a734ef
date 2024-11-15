@@ -1,0 +1,16 @@
+package www.silver.hom;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BoardController {
+	
+	@GetMapping(value = "board")
+	public String join() throws Exception {
+		//Controller -> Service -> Dao -> Mapper
+		//전체 게시글을 가져오는 작업이 필요
+		return "board/bbs";
+	}
+
+}
